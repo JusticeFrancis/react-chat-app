@@ -43,7 +43,7 @@ const SelectForm = (props) => {
             body: JSON.stringify({ date: date , email: email })
         };
         console.log(requestOptions)
-        const response = await fetch('http://liuyangtong.herokuapp.com/appointment/create', requestOptions)
+        const response = await fetch('https://liuyangtong.herokuapp.com/appointment/create', requestOptions)
         const res = await response.json()
         console.log(res.message)
         if (res.message === 'successfull')

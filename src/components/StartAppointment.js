@@ -25,7 +25,7 @@ const StartAppointment = () => {
           body: JSON.stringify({ id: id})
       };
       console.log(requestOptions)
-      const response = await fetch('http://liuyangtong.herokuapp.com/appointment/verify', requestOptions)
+      const response = await fetch('https://liuyangtong.herokuapp.com/appointment/verify', requestOptions)
       const res = await response.json()
       console.log(res.message)
       if (res.type === 'success')
