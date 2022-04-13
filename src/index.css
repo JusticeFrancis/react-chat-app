@@ -1,6 +1,6 @@
 
 /*
-backhroundColor: #ffe290;
+backhroundColor: #FFFFFF;
 color: #4a5a6e;
 you: #1f92ff;
 message background color: #f1f3f8;
@@ -10,12 +10,12 @@ button color: #028aff;
 */
 
 body {
-  background: #ffe290;
+  background: #FFFFFF;
   font-family: 'KoHo', sans-serif;
 }
 
 .bgColor{
-  background: #ffe290;
+  background: #FFFFFF;
 }
 .primaryColor{
   color: #4a5a6e;
