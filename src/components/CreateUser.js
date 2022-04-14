@@ -16,7 +16,7 @@ const CreateUser = (props) => {
   };
 
   const handleSubmit =()=>{
-   const form = document.querySelector['#realform']
+   const form = document.getElementById('realform')
    form.submit()
   }
 
