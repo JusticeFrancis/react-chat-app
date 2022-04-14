@@ -34,15 +34,15 @@ const Index = (props) => {
       const res = await response.json()
       console.log(res)
       // store the user in localStorage
+      try {
+        localStorage.clear()
+        localStorage.setItem('user', JSON.stringify(res.doc))
+        console.log(localStorage)
+        window.location.reload()
+      } catch (error) {
+        console.log(error)
+      }
       if(res.type === true){
-        try {
-          sessionStorage.clear()
-          sessionStorage.setItem('user', JSON.stringify(res.doc))
-          console.log(sessionStorage)
-          window.location.reload()
-        } catch (error) {
-          console.log(error)
-        }
 
        startConversation(res.doc.username)
       }else{
@@ -87,8 +87,8 @@ const Index = (props) => {
       const res = await response.json()
       console.log(res)
       try {
-        sessionStorage.clear()
-        sessionStorage.setItem('user', JSON.stringify(res.newUser))
+        localStorage.clear()
+        localStorage.setItem('user', JSON.stringify(res.newUser))
         console.log(localStorage)
         window.location.reload()
       } catch (error) {
