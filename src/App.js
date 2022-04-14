@@ -15,7 +15,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 
-const socket = io(`https://liuyangtong.herokuapp.com`);
+const socket = io(`https://eli-fr.herokuapp.com`);
 
 
 
