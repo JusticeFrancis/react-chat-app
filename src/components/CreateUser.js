@@ -15,6 +15,10 @@ const CreateUser = (props) => {
     window.location.reload()
   };
 
+  const handleSubmit =()=>{
+    document.querySelector['#realform'].submit()
+  }
+
 
 
 
@@ -25,14 +29,14 @@ const CreateUser = (props) => {
       <Card>
         <Card.Body>
             <div>
-              <form onSubmit={onCreateUser} style={{ display: "inline-block" }}>
+              <form onSubmit={onCreateUser} id='realform' style={{ display: "inline-block" }}>
               <h5 className="username-label fs-8">Enter username for conversation</h5>
               <input className="input form-control" value={value} onChange={onChange} />
               </form>
             </div>
 
             <div className='text-center'>
-            <Button onClick={handleLogout} style={{backgroundColor: '#ed712e', border:'1px solid #ed712e '}} className='mt-2'>Logout</Button>
+            <Button onClick={handleSubmit} style={{backgroundColor: '#ed712e', border:'1px solid #ed712e '}} className='mt-2'>Enter chat</Button>
             </div>
            
 
