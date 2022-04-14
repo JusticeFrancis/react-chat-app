@@ -10,7 +10,7 @@ import { Button, Card } from 'react-bootstrap';
 const CreateUser = (props) => {
   const { onCreateUser, value, onChange } = props;
   const handleLogout = () => {
-    localStorage.clear();
+    sessionStorage.clear();
     console.log(localStorage)
     window.location.reload()
   };
