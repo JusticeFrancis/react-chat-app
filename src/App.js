@@ -62,8 +62,8 @@ function App() {
 
   
 
-  let audio = new Audio(boopSfx)
   const start = () => {
+    let audio = new Audio(boopSfx)
     audio.play()
   }
 //get url parameters
