@@ -87,8 +87,8 @@ const Index = (props) => {
       const res = await response.json()
       console.log(res)
       try {
-        localStorage.clear()
-        localStorage.setItem('user', JSON.stringify(res.newUser))
+        sessionStorage.clear()
+        sessionStorage.setItem('user', JSON.stringify(res.newUser))
         console.log(localStorage)
         window.location.reload()
       } catch (error) {
