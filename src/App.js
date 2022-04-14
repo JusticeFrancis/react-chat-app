@@ -83,7 +83,7 @@ if(step === -2){
             body: JSON.stringify({ id: statemsg})
             };
             //console.log(requestOptions)
-            const response = await fetch('https://liuyangtong.herokuapp.com/appointment/verify', requestOptions)
+            const response = await fetch('https://eli-fr.herokuapp.com/appointment/verify', requestOptions)
             const res = await response.json()
             if(res.type === 'success'){
     

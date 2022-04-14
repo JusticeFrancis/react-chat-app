@@ -33,11 +33,11 @@ const Index = (props) => {
       const response = await fetch('https:///eli-fr.herokuapp.com/signin', requestOptions)
       const res = await response.json()
       console.log(res)
-      // store the user in localStorage
+      // store the user in sessionStorage
       try {
-        localStorage.clear()
-        localStorage.setItem('user', JSON.stringify(res.doc))
-        console.log(localStorage)
+        sessionStorage.clear()
+        sessionStorage.setItem('user', JSON.stringify(res.doc))
+        console.log(sessionStorage)
         window.location.reload()
       } catch (error) {
         console.log(error)
@@ -87,9 +87,9 @@ const Index = (props) => {
       const res = await response.json()
       console.log(res)
       try {
-        localStorage.clear()
-        localStorage.setItem('user', JSON.stringify(res.newUser))
-        console.log(localStorage)
+        sessionStorage.clear()
+        sessionStorage.setItem('user', JSON.stringify(res.newUser))
+        console.log(sessionStorage)
         window.location.reload()
       } catch (error) {
         console.log(error)
