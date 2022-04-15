@@ -15,7 +15,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 
-const socket = io(`https://eli-fr.herokuapp.com`);
+const socket = io(`https://eli-fy.herokuapp.com`);
 
 
 
@@ -83,7 +83,7 @@ if(step === -2){
             body: JSON.stringify({ id: statemsg})
             };
             //console.log(requestOptions)
-            const response = await fetch('https://eli-fr.herokuapp.com/appointment/verify', requestOptions)
+            const response = await fetch('https://eli-fy.herokuapp.com/appointment/verify', requestOptions)
             const res = await response.json()
             if(res.type === 'success'){
     
