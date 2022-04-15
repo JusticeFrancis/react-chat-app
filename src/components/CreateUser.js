@@ -15,10 +15,6 @@ const CreateUser = (props) => {
     window.location.reload()
   };
 
-  const handleSubmit =()=>{
-   const form = document.getElementById('realform')
-   form.submit()
-  }
 
 
 
@@ -37,7 +33,7 @@ const CreateUser = (props) => {
             </div>
 
             <div className='text-center'>
-            <Button onClick={handleSubmit} style={{backgroundColor: '#ed712e', border:'1px solid #ed712e '}} className='mt-2'>Enter chat</Button>
+            <Button onClick={onCreateUser} style={{backgroundColor: '#ed712e', border:'1px solid #ed712e '}} className='mt-2'>Enter chat</Button>
             </div>
            
 
