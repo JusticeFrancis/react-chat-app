@@ -15,7 +15,12 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 
-const socket = io(`https://eli-fy.herokuapp.com`);
+const socket = io(`https://eli-fy.herokuapp.com`,{
+  withCredentials: true,
+  extraHeaders: {
+    "my-custom-header": "abcd"
+  }
+});
 
 
 
