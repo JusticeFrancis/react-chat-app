@@ -30,7 +30,7 @@ const Index = (props) => {
         body: JSON.stringify({ email,password })
       };
       console.log(requestOptions)
-      const response = await fetch('https:///eli-fy.herokuapp.com/signin', requestOptions)
+      const response = await fetch('https://liuyangtong.herokuapp.com/signin', requestOptions)
       const res = await response.json()
       console.log(res)
       // store the user in sessionStorage
@@ -83,7 +83,7 @@ const Index = (props) => {
         body: JSON.stringify({ email,username,password,user_type })
       };
       console.log(requestOptions)
-      const response = await fetch('https://eli-fy.herokuapp.com/signup', requestOptions)
+      const response = await fetch('https://liuyangtong.herokuapp.com/signup', requestOptions)
       const res = await response.json()
       console.log(res)
       try {

@@ -11,7 +11,7 @@ const CreateUser = (props) => {
   const { onCreateUser, value, onChange } = props;
   const handleLogout = () => {
     sessionStorage.clear();
-    console.log(localStorage)
+    console.log(sessionStorage)
     window.location.reload()
   };
 

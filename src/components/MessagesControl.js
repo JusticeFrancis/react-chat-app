@@ -46,7 +46,7 @@ const MessagesControl = (props) => {
       body: JSON.stringify({ id: id})
     };
     console.log(requestOptions)
-    const response = await fetch('https://eli-fy.herokuapp.com/conversation/verify', requestOptions)
+    const response = await fetch('https://liuyangtong.herokuapp.com/conversation/verify', requestOptions)
     const res = await response.json()
     setPrevMsg(res.messages)
     setLoader(false)
@@ -72,7 +72,7 @@ const MessagesControl = (props) => {
         })
       };
       console.log(requestOptions)
-      const response = await fetch('https://eli-fy.herokuapp.com/hold-conversation', requestOptions)
+      const response = await fetch('https://liuyangtong.herokuapp.com/hold-conversation', requestOptions)
       const res = await response.json()
       setConversationId(res.id)
       setLoader(false)
