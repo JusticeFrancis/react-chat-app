@@ -13,9 +13,9 @@ check its own documentaion
 start application using yarn start or npm start
 
 # how to use 
-register one use with whatever username and password you choose
-open incognito tab and register a second user but with username customer service and password whatever
-you can now successfully chat between the customer service and the other guest account
+register one use with whatever username and password you choose <br/>
+open incognito tab and register a second user but with username customer service and password whatever <br/>
+you can now successfully chat between the customer service and the other guest account <br/>
 
 # hire me or learn more about this project
 https://techkrab.me
